@@ -1,21 +1,22 @@
 # Data Saver Toggle – Samsung / Android
 
-Mała aplikacja do szybkiego włączania i wyłączania systemowego **Oszczędzania danych**.
+Prosta aplikacja i widget do szybkiego otwierania systemowej zakładki **Oszczędzanie danych**.
 
-## Dlaczego potrzebuje Ułatwień dostępu?
-Android nie pozwala zwykłej aplikacji bezpośrednio zmieniać globalnego Data Saver (`MANAGE_NETWORK_POLICY` jest uprawnieniem systemowym). Ta wersja nie wymaga roota ani Shizuku: po Twoim naciśnięciu otwiera systemowy ekran Data Saver, naciska jego główny przełącznik i wraca do aplikacji.
+## Jak działa
+Android nie pozwala zwykłej aplikacji bezpośrednio przełączać globalnego Data Saver bez specjalnych uprawnień systemowych. Ta wersja nie używa Accessibility, roota ani Shizuku.
 
-Usługa jest ograniczona w konfiguracji do pakietu `com.android.settings` i reaguje tylko, gdy w aplikacji został wydany rozkaz WŁĄCZ/WYŁĄCZ.
+Widget na ekranie głównym jednym tapnięciem otwiera bezpośrednio systemową zakładkę **Oszczędzanie danych**, gdzie przełączasz opcję ręcznie.
 
-## Pierwsze uruchomienie
-1. Zainstaluj apkę.
-2. Otwórz ją i naciśnij **Włącz / sprawdź usługę dostępu**.
-3. W „Zainstalowane aplikacje” / „Zainstalowane usługi” wybierz **Przełączanie oszczędzania danych** i zezwól.
-4. Wróć do aplikacji.
-5. Od teraz używaj **WŁĄCZ** i **WYŁĄCZ**.
+## Użycie
+1. Zainstaluj APK.
+2. Przytrzymaj pusty fragment ekranu głównego.
+3. Wybierz **Widgety**.
+4. Znajdź **Data Saver**.
+5. Dodaj widget.
+6. Kliknięcie widgetu otwiera ustawienia Oszczędzania danych.
 
-## GitHub Actions — automatyczne APK
-Workflow `.github/workflows/build-apk.yml` buduje instalowalny debug APK na GitHubie.
-Po udanym uruchomieniu artefakt nazywa się `DataSaverToggle-APK` i zawiera `DataSaverToggle.apk`.
+## GitHub Actions
+Workflow `.github/workflows/build-apk.yml` buduje instalowalny APK.
+Artefakt nazywa się `DataSaverToggle-APK` i zawiera `DataSaverToggle.apk`.
 
-Build trigger.
+Rebuild trigger: 2026-09-19.
