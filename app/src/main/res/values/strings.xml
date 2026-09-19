@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Data Saver</string>
+    <string name="accessibility_description">Pozwala tej aplikacji wyłącznie otworzyć ekran Oszczędzania danych i nacisnąć jego główny przełącznik po Twoim poleceniu.</string>
+</resources>
