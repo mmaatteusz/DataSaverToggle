@@ -17,3 +17,5 @@ Usługa jest ograniczona w konfiguracji do pakietu `com.android.settings` i reag
 ## GitHub Actions — automatyczne APK
 Workflow `.github/workflows/build-apk.yml` buduje instalowalny debug APK na GitHubie.
 Po udanym uruchomieniu artefakt nazywa się `DataSaverToggle-APK` i zawiera `DataSaverToggle.apk`.
+
+Build trigger.
